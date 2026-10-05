@@ -3,465 +3,651 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Arshiya Game | دنیای گیمینگ</title>
-
-    <style>
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Tahoma, Arial, sans-serif;
-            background: #08090d;
-            color: #f5f5f5;
-            line-height: 1.8;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-
-        /* ================= HEADER ================= */
-
-        header {
-            background: #0d0f15;
-            border-bottom: 1px solid #252936;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-
-        .header-content {
-            width: 90%;
-            max-width: 1250px;
-            margin: auto;
-            min-height: 75px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        .logo span {
-            color: #8b5cf6;
-        }
-
-        nav {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            padding: 10px 14px;
-            border-radius: 8px;
-            color: #b9bdc9;
-            transition: 0.25s;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            background: #171a23;
-            color: #ffffff;
-        }
-
-
-        /* ================= HERO ================= */
-
-        .hero {
-            width: 90%;
-            max-width: 1250px;
-            margin: 25px auto;
-
-            min-height: 390px;
-            border: 1px solid #252936;
-            border-radius: 18px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            background:
-                radial-gradient(circle at 50% 25%, #332064 0%, transparent 40%),
-                linear-gradient(135deg, #10131c, #08090d);
-
-            overflow: hidden;
-        }
-
-        .hero-content {
-            padding: 45px 20px;
-        }
-
-        .hero-label {
-            display: inline-block;
-            background: #181322;
-            border: 1px solid #493477;
-            color: #a78bfa;
-            padding: 6px 15px;
-            border-radius: 30px;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 12px;
-        }
-
-        .hero h1 span {
-            color: #8b5cf6;
-        }
-
-        .hero p {
-            color: #a9adba;
-            max-width: 650px;
-            margin: auto auto 25px;
-            font-size: 17px;
-        }
-
-        .hero-button {
-            display: inline-block;
-            background: #7c3aed;
-            padding: 12px 25px;
-            border-radius: 9px;
-            font-weight: bold;
-            transition: 0.25s;
-        }
-
-        .hero-button:hover {
-            background: #8b5cf6;
-            transform: translateY(-2px);
-        }
-
-
-        /* ================= MAIN ================= */
-
-        main {
-            width: 90%;
-            max-width: 1250px;
-            margin: auto;
-        }
-
-        .section {
-            margin: 55px 0;
-        }
-
-        .section-title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            border-bottom: 1px solid #252936;
-            padding-bottom: 14px;
-            margin-bottom: 22px;
-        }
-
-        .section-title h2 {
-            font-size: 24px;
-        }
-
-        .section-title h2 span {
-            color: #8b5cf6;
-        }
-
-        .section-title small {
-            color: #737886;
-        }
-
-
-        /* ================= VIDEO GRID ================= */
-
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-        }
-
-
-        /* ================= VIDEO CARD ================= */
-
-        .video-card {
-            background: #101219;
-            border: 1px solid #252936;
-            border-radius: 14px;
-            overflow: hidden;
-            transition: 0.25s;
-        }
-
-        .video-card:hover {
-            transform: translateY(-5px);
-            border-color: #6841b7;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
-        }
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-        .video-frame {
-            width: 100%;
-            height: 330px;
-            border: 0;
-            display: block;
-            background: #050507;
-        }
+<meta name="description"
+      content="Arshiya Game؛ سایت گیمینگ عرشیا با ویدیوهای Minecraft، World of Warcraft، Call of Duty و PES 2017">
 
-        .video-info {
-            padding: 18px;
-        }
+<meta name="keywords"
+      content="Arshiya Game, Minecraft, World of Warcraft, Call of Duty, PES 2017, ویدیو گیمینگ">
 
-        .game-tag {
-            display: inline-block;
+<meta name="robots"
+      content="index, follow">
 
-            color: #a78bfa;
-            background: #181322;
+<title>Arshiya Game | دنیای گیمینگ عرشیا</title>
 
-            border-radius: 5px;
 
-            padding: 3px 9px;
+<style>
 
-            font-size: 11px;
+/* =========================
+   RESET
+========================= */
 
-            margin-bottom: 8px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .video-info h3 {
-            font-size: 19px;
-            margin-bottom: 7px;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .video-info p {
-            color: #858a98;
-            font-size: 13px;
-        }
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #07080c;
+    color: #f5f5f5;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
-        /* ================= GAMES ================= */
+/* =========================
+   HEADER
+========================= */
 
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-        .game-card {
-            background: #101219;
-            border: 1px solid #252936;
-            border-radius: 13px;
+    background: rgba(9, 10, 15, 0.96);
+    backdrop-filter: blur(12px);
 
-            padding: 24px 15px;
+    border-bottom: 1px solid #292d38;
+}
 
-            text-align: center;
+.header {
+    width: min(94%, 1350px);
+    min-height: 74px;
+    margin: auto;
 
-            transition: 0.25s;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-        .game-card:hover {
-            transform: translateY(-5px);
-            border-color: #6841b7;
-            background: #131620;
-        }
+.logo {
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: bold;
+    white-space: nowrap;
+}
 
-        .game-icon {
-            font-size: 42px;
-            margin-bottom: 8px;
-        }
+.logo-purple {
+    color: #8b5cf6;
+}
 
-        .game-card h3 {
-            font-size: 17px;
-            margin-bottom: 4px;
-        }
+.logo-white {
+    color: white;
+}
 
-        .game-card p {
-            color: #777c8a;
-            font-size: 12px;
-        }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
 
+nav a {
+    color: #aeb3c0;
+    font-size: 14px;
 
-        /* ================= GAME PAGES ================= */
+    padding: 9px 12px;
+    border-radius: 8px;
 
-        .game-page {
-            display: none;
-        }
+    transition: 0.25s;
+}
 
-        .game-page:target {
-            display: block;
-        }
+nav a:hover {
+    color: white;
+    background: #171a23;
+}
 
-        #home {
-            display: block;
-        }
 
-        body:has(.game-page:target) #home {
-            display: none;
-        }
+/* =========================
+   HERO
+========================= */
 
+.hero {
+    width: min(94%, 1350px);
+    min-height: clamp(360px, 50vw, 480px);
 
-        /* ================= GAME HEADER ================= */
+    margin: 24px auto;
 
-        .game-header {
-            background: linear-gradient(135deg, #141722, #0d0f15);
+    border: 1px solid #292d3a;
+    border-radius: 22px;
 
-            border: 1px solid #252936;
-            border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-            padding: 30px;
+    text-align: center;
 
-            margin-top: 30px;
-            margin-bottom: 25px;
-        }
+    position: relative;
+    overflow: hidden;
 
-        .game-header h1 {
-            font-size: 32px;
-            margin-bottom: 7px;
-        }
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #3b2370 0%,
+            transparent 48%
+        ),
+        linear-gradient(
+            135deg,
+            #121520,
+            #08090d
+        );
+}
 
-        .game-header p {
-            color: #8b909e;
-        }
+.hero::before {
+    content: "";
 
+    position: absolute;
 
-        /* ================= BACK BUTTON ================= */
+    width: 320px;
+    height: 320px;
 
-        .back-button {
-            display: inline-block;
+    border-radius: 50%;
 
-            margin-top: 15px;
+    background: #7c3aed;
 
-            background: #181b24;
-            border: 1px solid #303440;
+    filter: blur(130px);
 
-            padding: 8px 15px;
+    opacity: 0.13;
+}
 
-            border-radius: 7px;
+.hero-content {
+    position: relative;
+    z-index: 2;
 
-            color: #bbbfc9;
+    width: min(90%, 750px);
+}
 
-            font-size: 13px;
-        }
+.hero-badge {
+    display: inline-block;
 
-        .back-button:hover {
-            color: white;
-            border-color: #7c3aed;
-        }
+    padding: 6px 15px;
 
+    border: 1px solid #4d3980;
+    border-radius: 30px;
 
-        /* ================= EMPTY ================= */
+    background: #171122;
+    color: #bba3ff;
 
-        .empty-box {
-            background: #101219;
+    font-size: 12px;
 
-            border: 1px dashed #303440;
+    margin-bottom: 18px;
+}
 
-            border-radius: 13px;
+.hero h1 {
+    font-size: clamp(32px, 6vw, 56px);
+    line-height: 1.3;
 
-            text-align: center;
+    margin-bottom: 15px;
+}
 
-            padding: 45px 20px;
+.hero h1 span {
+    color: #8b5cf6;
+}
 
-            color: #777c8a;
-        }
+.hero p {
+    color: #a8acb9;
 
+    font-size: clamp(14px, 2vw, 18px);
 
-        /* ================= FOOTER ================= */
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
 
-        footer {
-            margin-top: 80px;
+.hero-button {
+    display: inline-block;
 
-            background: #0d0f15;
+    padding: 12px 28px;
 
-            border-top: 1px solid #252936;
+    background: #7c3aed;
+    color: white;
 
-            padding: 35px 20px;
+    border-radius: 9px;
 
-            text-align: center;
-        }
+    font-weight: bold;
 
-        footer strong {
-            color: #8b5cf6;
-        }
+    transition: 0.25s;
+}
 
-        footer p {
-            color: #707582;
+.hero-button:hover {
+    background: #8b5cf6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
 
-            font-size: 13px;
 
-            margin-top: 6px;
-        }
+/* =========================
+   MAIN
+========================= */
 
+main {
+    width: min(94%, 1350px);
+    margin: auto;
+}
 
-        /* ================= MOBILE ================= */
+.section {
+    margin: clamp(45px, 7vw, 70px) 0;
+}
 
-        @media (max-width: 850px) {
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 
-            .header-content {
-                flex-direction: column;
-                padding: 15px 0;
-            }
+    border-bottom: 1px solid #292d38;
 
-            .video-grid {
-                grid-template-columns: 1fr;
-            }
+    padding-bottom: 13px;
+    margin-bottom: 25px;
+}
 
-            .games-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+.section-title h2 {
+    font-size: clamp(20px, 3vw, 26px);
+}
 
-            .hero h1 {
-                font-size: 37px;
-            }
-        }
+.section-title h2 span {
+    color: #8b5cf6;
+}
 
+.section-title small {
+    color: #737886;
+}
 
-        @media (max-width: 500px) {
 
-            .games-grid {
-                grid-template-columns: 1fr;
-            }
+/* =========================
+   VIDEOS
+========================= */
 
-            .hero {
-                width: 94%;
-            }
+.videos {
+    display: grid;
 
-            main {
-                width: 94%;
-            }
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
-            .hero h1 {
-                font-size: 30px;
-            }
+    gap: 24px;
+}
 
-            .hero p {
-                font-size: 14px;
-            }
+.video-card {
+    min-width: 0;
 
-            .video-frame {
-                height: 250px;
-            }
+    background: #101219;
 
-            nav a {
-                padding: 7px 8px;
-                font-size: 12px;
-            }
-        }
+    border: 1px solid #252936;
+    border-radius: 15px;
 
-    </style>
+    overflow: hidden;
+
+    transition: 0.25s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #6942b7;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.35);
+}
+
+.video-frame {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    height: auto;
+
+    border: 0;
+
+    display: block;
+
+    background: #000;
+}
+
+.video-info {
+    padding: 18px;
+}
+
+.tag {
+    display: inline-block;
+
+    color: #b49aff;
+
+    background: #181322;
+
+    border: 1px solid #292039;
+
+    padding: 3px 9px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    margin-bottom: 8px;
+}
+
+.video-info h3 {
+    font-size: clamp(16px, 2vw, 20px);
+
+    margin-bottom: 7px;
+}
+
+.video-info p {
+    color: #858a98;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   GAMES
+========================= */
+
+.games {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 17px;
+}
+
+.game {
+    background: #101219;
+
+    border: 1px solid #252936;
+
+    border-radius: 14px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    transition: 0.25s;
+
+    min-width: 0;
+}
+
+.game:hover {
+    transform: translateY(-6px);
+
+    border-color: #7048c0;
+
+    background: #141722;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.25);
+}
+
+.game-icon {
+    font-size: clamp(34px, 5vw, 48px);
+
+    margin-bottom: 8px;
+}
+
+.game h3 {
+    font-size: 17px;
+
+    margin-bottom: 4px;
+}
+
+.game p {
+    color: #777c8a;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   GAME PAGES
+========================= */
+
+.game-page {
+    display: none;
+}
+
+.game-page:target {
+    display: block;
+}
+
+#home {
+    display: block;
+}
+
+body:has(.game-page:target) #home {
+    display: none;
+}
+
+.game-header {
+    margin: 30px 0;
+
+    padding: clamp(22px, 4vw, 35px);
+
+    border: 1px solid #292d3a;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #151823,
+            #0d0f15
+        );
+}
+
+.game-header h1 {
+    font-size: clamp(25px, 4vw, 36px);
+
+    margin-bottom: 6px;
+}
+
+.game-header p {
+    color: #858a98;
+}
+
+.back {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 8px 14px;
+
+    border: 1px solid #303440;
+
+    background: #181b24;
+
+    border-radius: 7px;
+
+    color: #bfc3cc;
+
+    font-size: 13px;
+}
+
+.back:hover {
+    border-color: #7c3aed;
+    color: white;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty {
+    padding: 60px 20px;
+
+    text-align: center;
+
+    border: 1px dashed #343845;
+
+    border-radius: 14px;
+
+    color: #777c8a;
+
+    background: #101219;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 90px;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: #0c0e13;
+
+    border-top: 1px solid #252936;
+}
+
+footer strong {
+    color: #8b5cf6;
+
+    font-size: 18px;
+}
+
+footer p {
+    color: #6f7480;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-direction: column;
+
+        padding: 14px 0;
+    }
+
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .games {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .header {
+        min-height: auto;
+
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 5px;
+    }
+
+    nav a {
+        text-align: center;
+
+        padding: 8px 4px;
+
+        font-size: 11px;
+    }
+
+    .hero {
+        margin-top: 15px;
+
+        min-height: 390px;
+
+        border-radius: 17px;
+    }
+
+    .hero-content {
+        width: 92%;
+    }
+
+    .hero-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section-title {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .games {
+        grid-template-columns: 1fr;
+    }
+
+    .game {
+        padding: 20px;
+    }
+
+    .video-info {
+        padding: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    nav {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -469,624 +655,648 @@
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-    <div class="header-content">
+<div class="header">
 
-        <a href="#home" class="logo">
-            🎮 <span>ARSHIYA</span> GAME
-        </a>
+<a href="#home" class="logo">
+
+🎮
+
+<span class="logo-purple">
+ARSHIYA
+</span>
+
+<span class="logo-white">
+GAME
+</span>
+
+</a>
 
 
-        <nav>
+<nav>
 
-            <a href="#home">
-                🏠 خانه
-            </a>
+<a href="#home">
+🏠 خانه
+</a>
 
-            <a href="#videos">
-                🎥 ویدیوها
-            </a>
+<a href="#videos">
+🎥 ویدیوها
+</a>
 
-            <a href="#wow">
-                ⚔️ WoW
-            </a>
+<a href="#wow">
+⚔️ WoW
+</a>
 
-            <a href="#minecraft">
-                ⛏️ Minecraft
-            </a>
+<a href="#minecraft">
+⛏️ Minecraft
+</a>
 
-            <a href="#gta">
-                🚗 GTA
-            </a>
+<a href="#cod">
+🎯 Call of Duty
+</a>
 
-            <a href="#cod">
-                🎯 Call of Duty
-            </a>
+<a href="#pes">
+⚽ PES 2017
+</a>
 
-        </nav>
+</nav>
 
-    </div>
+</div>
 
 </header>
 
 
 
-<!-- ===================================================== -->
-<!-- ===================== HOME ========================== -->
-<!-- ===================================================== -->
+<!-- =====================================================
+     HOME
+===================================================== -->
 
 <div id="home">
 
 
-    <!-- HERO -->
+<section class="hero">
 
-    <div class="hero">
+<div class="hero-content">
 
-        <div class="hero-content">
 
-            <div class="hero-label">
-                🎮 ARSHIYA GAME
-            </div>
+<div class="hero-badge">
 
+🎮 سایت گیمینگ عرشیا
 
-            <h1>
+</div>
 
-                دنیای
-                <span>گیمینگ</span>
-                عرشیا
 
-            </h1>
+<h1>
 
+دنیای
 
-            <p>
+<span>
+گیمینگ
+</span>
 
-                جدیدترین ویدیوهای گیمینگ،
-                آموزش‌ها و محتوای بازی‌های مورد علاقه‌ات
-                را در یکجا ببین.
+عرشیا
 
-            </p>
+</h1>
 
 
-            <a href="#videos" class="hero-button">
+<p>
 
-                🎥 مشاهده آخرین ویدیوها
+ویدیوهای گیمینگ، آموزش‌ها و
+لحظات جذاب بازی‌های مختلف
+را در Arshiya Game دنبال کن.
 
-            </a>
+</p>
 
-        </div>
 
-    </div>
+<a href="#videos"
+   class="hero-button">
 
+🔥 مشاهده ویدیوها
 
+</a>
 
-    <main>
 
+</div>
 
-        <!-- ================= VIDEOS ================= -->
+</section>
 
-        <section class="section" id="videos">
 
 
-            <div class="section-title">
+<main>
 
-                <h2>
 
-                    🔥
-                    <span>آخرین</span>
-                    ویدیوها
+<!-- =========================
+     VIDEOS
+========================= -->
 
-                </h2>
+<section class="section"
+         id="videos">
 
 
-                <small>
+<div class="section-title">
 
-                    جدیدترین مطالب سایت
+<h2>
 
-                </small>
+🔥
 
-            </div>
+<span>
+آخرین
+</span>
 
+ویدیوها
 
+</h2>
 
-            <div class="video-grid">
-
-
-                <!-- ================= WOW VIDEO ================= -->
-
-                <article class="video-card">
-
-
-                    <iframe
-
-                        class="video-frame"
-
-                        src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
-
-                        allowfullscreen>
-
-                    </iframe>
-
-
-                    <div class="video-info">
-
-
-                        <span class="game-tag">
-
-                            World of Warcraft
-
-                        </span>
-
-
-                        <h3>
-
-                            🎮 ویدیوی World of Warcraft
-
-                        </h3>
-
-
-                        <p>
-
-                            یک ویدیوی جذاب از World of Warcraft
-                            با زیرنویس فارسی.
-
-                        </p>
-
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ================= MINECRAFT VIDEO ================= -->
-
-                <article class="video-card">
-
-
-                    <iframe
-
-                        class="video-frame"
-
-                        src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
-
-                        allowfullscreen>
-
-                    </iframe>
-
-
-                    <div class="video-info">
-
-
-                        <span class="game-tag">
-
-                            Minecraft
-
-                        </span>
-
-
-                        <h3>
-
-                            🚀 آموزش ساخت موشک در Minecraft
-
-                        </h3>
-
-
-                        <p>
-
-                            آموزش ساخت موشک در Minecraft
-                            بدون ماد.
-
-                        </p>
-
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= GAMES ================= -->
-
-        <section class="section">
-
-
-            <div class="section-title">
-
-                <h2>
-
-                    🎮
-                    <span>بازی‌ها</span>
-
-                </h2>
-
-
-                <small>
-
-                    انتخاب بازی
-
-                </small>
-
-            </div>
-
-
-
-            <div class="games-grid">
-
-
-                <a href="#wow" class="game-card">
-
-                    <div class="game-icon">
-                        ⚔️
-                    </div>
-
-                    <h3>
-                        World of Warcraft
-                    </h3>
-
-                    <p>
-                        ویدیوها و مطالب WoW
-                    </p>
-
-                </a>
-
-
-
-                <a href="#minecraft" class="game-card">
-
-                    <div class="game-icon">
-                        ⛏️
-                    </div>
-
-                    <h3>
-                        Minecraft
-                    </h3>
-
-                    <p>
-                        ویدیوها و آموزش‌ها
-                    </p>
-
-                </a>
-
-
-
-                <a href="#gta" class="game-card">
-
-                    <div class="game-icon">
-                        🚗
-                    </div>
-
-                    <h3>
-                        GTA
-                    </h3>
-
-                    <p>
-                        ویدیوهای GTA
-                    </p>
-
-                </a>
-
-
-
-                <a href="#cod" class="game-card">
-
-                    <div class="game-icon">
-                        🎯
-                    </div>
-
-                    <h3>
-                        Call of Duty
-                    </h3>
-
-                    <p>
-                        ویدیوهای کالاف
-                    </p>
-
-                </a>
-
-
-            </div>
-
-        </section>
-
-
-    </main>
+<small>
+جدیدترین ویدیوهای سایت
+</small>
 
 </div>
 
 
 
-<!-- ===================================================== -->
-<!-- ================= WOW PAGE ========================== -->
-<!-- ===================================================== -->
-
-<section class="game-page" id="wow">
+<div class="videos">
 
 
-    <main>
+<!-- WOW -->
+
+<article class="video-card">
 
 
-        <div class="game-header">
+<iframe
+
+class="video-frame"
+
+src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
+
+allowfullscreen>
+
+</iframe>
 
 
-            <h1>
-                ⚔️ World of Warcraft
-            </h1>
+<div class="video-info">
+
+<span class="tag">
+World of Warcraft
+</span>
 
 
-            <p>
-                تمام ویدیوهای World of Warcraft
-            </p>
+<h3>
+🎮 ویدیوی World of Warcraft
+</h3>
 
 
-            <a href="#home" class="back-button">
-                ← برگشت به صفحه اصلی
-            </a>
+<p>
+ویدیوی جذاب World of Warcraft
+با زیرنویس فارسی.
+</p>
+
+</div>
+
+</article>
 
 
-        </div>
+
+<!-- MINECRAFT -->
+
+<article class="video-card">
 
 
+<iframe
 
-        <div class="video-grid">
+class="video-frame"
 
+src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
 
-            <article class="video-card">
+allowfullscreen>
 
-
-                <iframe
-
-                    class="video-frame"
-
-                    src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
-
-                    allowfullscreen>
-
-                </iframe>
+</iframe>
 
 
-                <div class="video-info">
+<div class="video-info">
+
+<span class="tag">
+Minecraft
+</span>
 
 
-                    <span class="game-tag">
-                        World of Warcraft
-                    </span>
+<h3>
+🚀 آموزش ساخت موشک در Minecraft
+</h3>
 
 
-                    <h3>
-                        🎮 ویدیوی World of Warcraft
-                    </h3>
+<p>
+آموزش ساخت موشک در Minecraft
+بدون ماد.
+</p>
+
+</div>
+
+</article>
 
 
-                    <p>
-                        ویدیوی World of Warcraft با زیرنویس فارسی.
-                    </p>
-
-
-                </div>
-
-
-            </article>
-
-
-        </div>
-
-
-    </main>
+</div>
 
 </section>
 
 
 
-<!-- ===================================================== -->
-<!-- ================= MINECRAFT PAGE ==================== -->
-<!-- ===================================================== -->
+<!-- =========================
+     GAMES
+========================= -->
 
-<section class="game-page" id="minecraft">
-
-
-    <main>
+<section class="section">
 
 
-        <div class="game-header">
+<div class="section-title">
 
+<h2>
 
-            <h1>
-                ⛏️ Minecraft
-            </h1>
+🎮
 
+<span>
+بازی‌ها
+</span>
 
-            <p>
-                ویدیوهای Minecraft
-            </p>
+</h2>
 
+<small>
+انتخاب بازی
+</small>
 
-            <a href="#home" class="back-button">
-                ← برگشت به صفحه اصلی
-            </a>
-
-
-        </div>
+</div>
 
 
 
-        <div class="video-grid">
+<div class="games">
 
 
-            <!-- MINECRAFT VIDEO -->
+<!-- WOW -->
 
-            <article class="video-card">
+<a href="#wow"
+   class="game">
 
+<div class="game-icon">
+⚔️
+</div>
 
-                <iframe
+<h3>
+World of Warcraft
+</h3>
 
-                    class="video-frame"
+<p>
+ویدیوهای WoW
+</p>
 
-                    src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
-
-                    allowfullscreen>
-
-                </iframe>
-
-
-                <div class="video-info">
-
-
-                    <span class="game-tag">
-                        Minecraft
-                    </span>
+</a>
 
 
-                    <h3>
-                        🚀 آموزش ساخت موشک در Minecraft
-                    </h3>
+<!-- MINECRAFT -->
+
+<a href="#minecraft"
+   class="game">
+
+<div class="game-icon">
+⛏️
+</div>
+
+<h3>
+Minecraft
+</h3>
+
+<p>
+آموزش و ویدیو
+</p>
+
+</a>
 
 
-                    <p>
-                        آموزش ساخت موشک در Minecraft
-                        بدون ماد.
-                    </p>
+<!-- CALL OF DUTY -->
+
+<a href="#cod"
+   class="game">
+
+<div class="game-icon">
+🎯
+</div>
+
+<h3>
+Call of Duty
+</h3>
+
+<p>
+ویدیوهای کالاف
+</p>
+
+</a>
 
 
-                </div>
+<!-- PES -->
+
+<a href="#pes"
+   class="game">
+
+<div class="game-icon">
+⚽
+</div>
+
+<h3>
+PES 2017
+</h3>
+
+<p>
+ویدیوهای PES
+</p>
+
+</a>
 
 
-            </article>
+</div>
+
+</section>
 
 
-        </div>
+</main>
+
+</div>
 
 
-    </main>
+
+<!-- =====================================================
+     WOW
+===================================================== -->
+
+<section class="game-page"
+         id="wow">
+
+<main>
+
+
+<div class="game-header">
+
+<h1>
+⚔️ World of Warcraft
+</h1>
+
+<p>
+ویدیوهای World of Warcraft
+</p>
+
+<a href="#home"
+   class="back">
+
+← برگشت به خانه
+
+</a>
+
+</div>
+
+
+
+<div class="videos">
+
+
+<article class="video-card">
+
+
+<iframe
+
+class="video-frame"
+
+src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
+
+allowfullscreen>
+
+</iframe>
+
+
+<div class="video-info">
+
+<span class="tag">
+World of Warcraft
+</span>
+
+
+<h3>
+🎮 ویدیوی World of Warcraft
+</h3>
+
+
+<p>
+ویدیوی World of Warcraft با زیرنویس فارسی.
+</p>
+
+</div>
+
+
+</article>
+
+
+</div>
+
+</main>
 
 </section>
 
 
 
-<!-- ===================================================== -->
-<!-- ================= GTA PAGE ========================== -->
-<!-- ===================================================== -->
+<!-- =====================================================
+     MINECRAFT
+===================================================== -->
 
-<section class="game-page" id="gta">
+<section class="game-page"
+         id="minecraft">
 
-
-    <main>
-
-
-        <div class="game-header">
+<main>
 
 
-            <h1>
-                🚗 GTA
-            </h1>
+<div class="game-header">
 
+<h1>
+⛏️ Minecraft
+</h1>
 
-            <p>
-                ویدیوهای GTA
-            </p>
+<p>
+ویدیوهای Minecraft و آموزش‌های بازی
+</p>
 
+<a href="#home"
+   class="back">
 
-            <a href="#home" class="back-button">
-                ← برگشت به صفحه اصلی
-            </a>
+← برگشت به خانه
 
+</a>
 
-        </div>
-
-
-
-        <div class="empty-box">
-
-            🚗
-
-            <br><br>
-
-            هنوز ویدیوی GTA اضافه نشده.
-
-        </div>
-
-
-    </main>
-
-</section>
+</div>
 
 
 
-<!-- ===================================================== -->
-<!-- ================= CALL OF DUTY PAGE ================= -->
-<!-- ===================================================== -->
-
-<section class="game-page" id="cod">
+<div class="videos">
 
 
-    <main>
+<article class="video-card">
 
 
-        <div class="game-header">
+<iframe
+
+class="video-frame"
+
+src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
+
+allowfullscreen>
+
+</iframe>
 
 
-            <h1>
-                🎯 Call of Duty
-            </h1>
+<div class="video-info">
+
+<span class="tag">
+Minecraft
+</span>
 
 
-            <p>
-                ویدیوهای Call of Duty
-            </p>
+<h3>
+🚀 آموزش ساخت موشک در Minecraft
+</h3>
 
 
-            <a href="#home" class="back-button">
-                ← برگشت به صفحه اصلی
-            </a>
+<p>
+آموزش ساخت موشک در Minecraft
+بدون ماد.
+</p>
+
+</div>
 
 
-        </div>
+</article>
 
 
+</div>
 
-        <div class="empty-box">
-
-            🎯
-
-            <br><br>
-
-            هنوز ویدیوی Call of Duty اضافه نشده.
-
-        </div>
-
-
-    </main>
+</main>
 
 </section>
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     CALL OF DUTY
+===================================================== -->
+
+<section class="game-page"
+         id="cod">
+
+<main>
+
+
+<div class="game-header">
+
+<h1>
+🎯 Call of Duty
+</h1>
+
+<p>
+ویدیوهای Call of Duty
+</p>
+
+<a href="#home"
+   class="back">
+
+← برگشت به خانه
+
+</a>
+
+</div>
+
+
+
+<div class="empty">
+
+🎯
+
+<br><br>
+
+هنوز ویدیوی Call of Duty
+اضافه نشده.
+
+<br><br>
+
+به‌زودی ویدیوهای کالاف
+اینجا قرار می‌گیرند.
+
+</div>
+
+
+</main>
+
+</section>
+
+
+
+<!-- =====================================================
+     PES 2017
+===================================================== -->
+
+<section class="game-page"
+         id="pes">
+
+<main>
+
+
+<div class="game-header">
+
+<h1>
+⚽ PES 2017
+</h1>
+
+<p>
+ویدیوهای PES 2017
+</p>
+
+<a href="#home"
+   class="back">
+
+← برگشت به خانه
+
+</a>
+
+</div>
+
+
+
+<div class="empty">
+
+⚽
+
+<br><br>
+
+هنوز ویدیوی PES 2017
+اضافه نشده.
+
+<br><br>
+
+به‌زودی ویدیوهای PES 2017
+اینجا قرار می‌گیرند.
+
+</div>
+
+
+</main>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-
-    <strong>
-        🎮 ARSHIYA GAME
-    </strong>
-
-
-    <p>
-        دنیای گیمینگ عرشیا
-    </p>
+<strong>
+🎮 ARSHIYA GAME
+</strong>
 
 
-    <p>
-        © 2026 Arshiya Game
-    </p>
+<p>
+دنیای گیمینگ عرشیا
+</p>
 
+
+<p>
+Minecraft • World of Warcraft •
+Call of Duty • PES 2017
+</p>
+
+
+<p>
+© 2026 Arshiya Game
+</p>
 
 </footer>
 
