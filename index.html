@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
@@ -716,6 +716,285 @@ footer p{
 
     .hero h1{
         font-size:29px;
+    }
+}
+
+
+/* ================= ARSHIYA GAME PRO UPGRADE ================= */
+:root{
+    --bg:#05060a;
+    --panel:rgba(15,17,27,.78);
+    --panel-strong:#10131d;
+    --line:rgba(139,92,246,.20);
+    --purple:#8b5cf6;
+    --purple-2:#a78bfa;
+    --cyan:#22d3ee;
+    --muted:#8e95a7;
+}
+
+html{scroll-padding-top:100px}
+
+body{
+    background:
+      radial-gradient(circle at 10% 10%,rgba(139,92,246,.10),transparent 25%),
+      radial-gradient(circle at 90% 35%,rgba(34,211,238,.07),transparent 24%),
+      linear-gradient(180deg,#05060a 0%,#080a10 55%,#05060a 100%);
+    background-attachment:fixed;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.18;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:44px 44px;
+    mask-image:linear-gradient(to bottom,black,transparent 90%);
+    z-index:-1;
+}
+
+header{
+    background:rgba(5,6,10,.72);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    box-shadow:0 10px 40px rgba(0,0,0,.22);
+}
+
+.header{min-height:72px}
+
+.logo{
+    letter-spacing:.5px;
+    text-shadow:0 0 24px rgba(139,92,246,.25);
+}
+
+.logo-purple{
+    background:linear-gradient(90deg,#a78bfa,#8b5cf6,#c084fc);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+nav a{
+    position:relative;
+    border:1px solid transparent;
+}
+
+nav a:hover{
+    background:rgba(139,92,246,.10);
+    border-color:rgba(139,92,246,.18);
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:12px;
+    right:12px;
+    bottom:4px;
+    height:2px;
+    border-radius:99px;
+    background:linear-gradient(90deg,var(--purple),var(--cyan));
+    transform:scaleX(0);
+    transition:.25s;
+}
+
+nav a:hover::after{transform:scaleX(1)}
+
+.hero{
+    min-height:520px;
+    margin-top:30px;
+    border:1px solid rgba(167,139,250,.20);
+    box-shadow:0 30px 100px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.05);
+    background:
+      radial-gradient(circle at 80% 20%,rgba(139,92,246,.28),transparent 28%),
+      radial-gradient(circle at 65% 80%,rgba(34,211,238,.12),transparent 24%),
+      linear-gradient(135deg,rgba(25,18,43,.96),rgba(7,9,15,.98));
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:560px;
+    height:560px;
+    right:-160px;
+    top:-190px;
+    border:1px solid rgba(167,139,250,.12);
+    border-radius:50%;
+    box-shadow:0 0 0 70px rgba(139,92,246,.025),0 0 0 140px rgba(139,92,246,.018);
+}
+
+.hero::after{
+    background:linear-gradient(135deg,var(--purple),var(--cyan));
+    opacity:.10;
+}
+
+.hero-content{padding:65px}
+
+.badge{
+    background:rgba(139,92,246,.10);
+    border-color:rgba(167,139,250,.30);
+    box-shadow:0 0 30px rgba(139,92,246,.08);
+}
+
+.hero h1{
+    letter-spacing:-1.5px;
+    text-shadow:0 12px 50px rgba(0,0,0,.35);
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#c4b5fd,#8b5cf6,#22d3ee);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.hero p{color:#aeb5c5}
+
+.btn{
+    border:1px solid transparent;
+    box-shadow:0 10px 30px rgba(0,0,0,.20);
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#7c3aed,#9b5cff);
+}
+
+.btn-primary:hover{
+    box-shadow:0 14px 35px rgba(124,58,237,.28);
+}
+
+.btn-dark{
+    background:rgba(255,255,255,.045);
+    border-color:rgba(255,255,255,.10);
+    backdrop-filter:blur(10px);
+}
+
+.section{margin:78px 0}
+
+.section-title{
+    border-bottom-color:rgba(255,255,255,.08);
+}
+
+.section-title h2 span{
+    background:linear-gradient(90deg,#a78bfa,#8b5cf6);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.video-card,.game-card,.info-card,.account-card,.feature-box,.empty{
+    background:linear-gradient(145deg,rgba(18,21,32,.88),rgba(9,11,17,.90));
+    border-color:rgba(255,255,255,.08);
+    box-shadow:0 15px 50px rgba(0,0,0,.16);
+    backdrop-filter:blur(12px);
+}
+
+.video-card:hover,.game-card:hover,.account-card:hover{
+    border-color:rgba(139,92,246,.42);
+    box-shadow:0 24px 65px rgba(0,0,0,.30),0 0 35px rgba(139,92,246,.07);
+}
+
+.video-info{padding:22px}
+
+.tag{
+    background:rgba(139,92,246,.10);
+    border-color:rgba(167,139,250,.20);
+}
+
+.feature-box{
+    min-height:285px;
+}
+
+.feature-box::after{
+    content:"";
+    position:absolute;
+    inset:auto -80px -120px auto;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:linear-gradient(135deg,rgba(139,92,246,.14),rgba(34,211,238,.05));
+    filter:blur(20px);
+}
+
+.game-card{
+    padding:30px 15px;
+}
+
+.game-icon{
+    filter:drop-shadow(0 8px 18px rgba(139,92,246,.16));
+}
+
+.account-card{
+    padding:34px;
+}
+
+.email-box{
+    background:rgba(0,0,0,.22);
+    border-color:rgba(255,255,255,.08);
+}
+
+.account-note{
+    background:rgba(255,255,255,.025);
+    border-color:rgba(255,255,255,.10);
+}
+
+.info-card{
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(139,92,246,.28);
+}
+
+.game-header{
+    background:
+      radial-gradient(circle at 90% 20%,rgba(139,92,246,.15),transparent 25%),
+      linear-gradient(135deg,rgba(22,25,36,.94),rgba(9,11,17,.96));
+    border-color:rgba(167,139,250,.18);
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.back{
+    background:rgba(255,255,255,.04);
+    border-color:rgba(255,255,255,.10);
+}
+
+.empty{
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+footer{
+    background:rgba(5,7,11,.82);
+    border-top-color:rgba(255,255,255,.08);
+    box-shadow:0 -20px 70px rgba(0,0,0,.18);
+}
+
+.footer-logo{
+    background:linear-gradient(90deg,#c4b5fd,#8b5cf6,#22d3ee);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+@media(max-width:600px){
+    .hero{min-height:450px;margin-top:18px}
+    .hero-content{padding:38px 18px}
+    .hero h1{letter-spacing:-.5px}
+    .section{margin:55px 0}
+    .feature-box{min-height:245px}
+}
+
+@media(prefers-reduced-motion:no-preference){
+    .hero{animation:heroGlow 8s ease-in-out infinite alternate}
+    @keyframes heroGlow{
+        from{box-shadow:0 30px 100px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.05)}
+        to{box-shadow:0 30px 100px rgba(0,0,0,.35),0 0 55px rgba(139,92,246,.06),inset 0 1px 0 rgba(255,255,255,.05)}
     }
 }
 
@@ -1498,4 +1777,3 @@ Call of Duty • PES 2017
 </body>
 
 </html>
-```
