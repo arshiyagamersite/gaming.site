@@ -1,23 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Arshiya Game - سایت گیمینگ عرشیا | ویدیوهای Minecraft، World of Warcraft، Call of Duty و PES 2017">
+<title>Arshiya Game | فروشگاه گیمینگ</title>
 
-<meta name="keywords"
-content="Arshiya Game, گیمینگ, Minecraft, World of Warcraft, Call of Duty, PES 2017">
-
-<meta name="robots" content="index, follow">
-
-<title>Arshiya Game | دنیای گیمینگ عرشیا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+
+:root{
+    --bg:#020817;
+    --bg2:#061127;
+    --panel:#07152d;
+    --panel2:#0a1b38;
+    --border:#15356b;
+
+    --blue:#3568ff;
+    --blue2:#5838ff;
+    --purple:#7c3cff;
+    --cyan:#23b8ff;
+
+    --text:#f5f7ff;
+    --muted:#9aa8c2;
+
+    --green:#19d67c;
+    --pink:#ff35b8;
+
+    --shadow:0 20px 60px rgba(0,0,0,.45);
+}
 
 *{
     margin:0;
@@ -30,716 +44,13 @@ html{
 }
 
 body{
-    font-family:Tahoma,Arial,sans-serif;
-    background:#07080d;
-    color:#fff;
-    line-height:1.8;
-    overflow-x:hidden;
-}
-
-a{
-    color:inherit;
-    text-decoration:none;
-}
-
-
-/* ================= HEADER ================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:9999;
-    background:rgba(7,8,13,.95);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid #252936;
-}
-
-.header{
-    width:min(94%,1400px);
-    min-height:76px;
-    margin:auto;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.logo{
-    font-size:25px;
-    font-weight:bold;
-    white-space:nowrap;
-}
-
-.logo-purple{
-    color:#8b5cf6;
-}
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    padding:9px 12px;
-    border-radius:8px;
-    color:#aeb3c0;
-    font-size:13px;
-    transition:.25s;
-}
-
-nav a:hover{
-    background:#171923;
-    color:#fff;
-}
-
-
-/* ================= HERO ================= */
-
-.hero{
-    width:min(94%,1400px);
-    min-height:470px;
-    margin:25px auto;
-
-    border-radius:22px;
-    border:1px solid #2b2e3b;
-
-    position:relative;
-    overflow:hidden;
-
-    display:flex;
-    align-items:center;
-
+    font-family:"Vazirmatn",sans-serif;
     background:
-    radial-gradient(circle at 75% 30%,rgba(124,58,237,.35),transparent 35%),
-    radial-gradient(circle at 20% 80%,rgba(37,99,235,.15),transparent 30%),
-    linear-gradient(135deg,#171321,#08090d);
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:400px;
-    height:400px;
-    border-radius:50%;
-    background:#7c3aed;
-    filter:blur(160px);
-    opacity:.12;
-    right:-100px;
-    bottom:-150px;
-}
-
-.hero-content{
-    width:min(90%,750px);
-    padding:50px;
-    position:relative;
-    z-index:2;
-}
-
-.badge{
-    display:inline-block;
-    padding:7px 16px;
-    border-radius:30px;
-    background:#191326;
-    border:1px solid #4b357d;
-    color:#b9a1ff;
-    font-size:12px;
-    margin-bottom:18px;
-}
-
-.hero h1{
-    font-size:clamp(35px,6vw,62px);
-    line-height:1.25;
-    margin-bottom:15px;
-}
-
-.hero h1 span{
-    color:#8b5cf6;
-}
-
-.hero p{
-    color:#a5a9b5;
-    font-size:clamp(14px,2vw,18px);
-    max-width:650px;
-    margin-bottom:28px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:11px 23px;
-    border-radius:9px;
-    font-weight:bold;
-    transition:.25s;
-}
-
-.btn-primary{
-    background:#7c3aed;
-}
-
-.btn-primary:hover{
-    background:#8b5cf6;
-    transform:translateY(-3px);
-}
-
-.btn-dark{
-    background:#171a23;
-    border:1px solid #303440;
-    color:#c6cad3;
-}
-
-.btn-dark:hover{
-    color:#fff;
-    border-color:#7c3aed;
-}
-
-
-/* ================= MAIN ================= */
-
-main{
-    width:min(94%,1400px);
-    margin:auto;
-}
-
-.section{
-    margin:65px 0;
-}
-
-.section-title{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    margin-bottom:25px;
-    padding-bottom:13px;
-    border-bottom:1px solid #252936;
-}
-
-.section-title h2{
-    font-size:clamp(21px,3vw,28px);
-}
-
-.section-title h2 span{
-    color:#8b5cf6;
-}
-
-.section-title small{
-    color:#6f7480;
-}
-
-
-/* ================= VIDEO ================= */
-
-.video-grid{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:25px;
-}
-
-.video-card{
-    background:#101219;
-    border:1px solid #252936;
-    border-radius:16px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.video-card:hover{
-    transform:translateY(-6px);
-    border-color:#6841b7;
-    box-shadow:0 18px 50px rgba(0,0,0,.4);
-}
-
-.video-frame{
-    width:100%;
-    aspect-ratio:16/9;
-    border:0;
-    display:block;
-    background:#000;
-}
-
-.video-info{
-    padding:19px;
-}
-
-.tag{
-    display:inline-block;
-    background:#191326;
-    border:1px solid #2d2343;
-    color:#b49aff;
-    padding:3px 9px;
-    border-radius:5px;
-    font-size:11px;
-    margin-bottom:8px;
-}
-
-.video-info h3{
-    font-size:clamp(16px,2vw,20px);
-    margin-bottom:6px;
-}
-
-.video-info p{
-    color:#858a98;
-    font-size:13px;
-}
-
-
-/* ================= FEATURED ================= */
-
-.featured{
-    display:grid;
-    grid-template-columns:1.3fr .7fr;
-    gap:20px;
-}
-
-.feature-box{
-    min-height:260px;
-    border-radius:16px;
-    border:1px solid #292d39;
-    background:linear-gradient(135deg,#151722,#0d0f15);
-    padding:28px;
-    position:relative;
-    overflow:hidden;
-}
-
-.feature-box::before{
-    content:"";
-    position:absolute;
-    width:200px;
-    height:200px;
-    background:#7c3aed;
-    filter:blur(100px);
-    opacity:.1;
-    left:-50px;
-    bottom:-80px;
-}
-
-.feature-box-content{
-    position:relative;
-    z-index:2;
-}
-
-.feature-icon{
-    font-size:45px;
-    margin-bottom:10px;
-}
-
-.feature-box h3{
-    font-size:24px;
-    margin-bottom:8px;
-}
-
-.feature-box p{
-    color:#858a98;
-    max-width:600px;
-}
-
-
-/* ================= GAMES ================= */
-
-.games{
-    display:grid;
-    grid-template-columns:repeat(4,minmax(0,1fr));
-    gap:17px;
-}
-
-.game-card{
-    background:#101219;
-    border:1px solid #252936;
-    border-radius:15px;
-    padding:27px 15px;
-    text-align:center;
-    transition:.3s;
-}
-
-.game-card:hover{
-    transform:translateY(-7px);
-    background:#141722;
-    border-color:#7048c0;
-    box-shadow:0 12px 35px rgba(0,0,0,.3);
-}
-
-.game-icon{
-    font-size:48px;
-    margin-bottom:8px;
-}
-
-.game-card h3{
-    font-size:17px;
-    margin-bottom:4px;
-}
-
-.game-card p{
-    color:#747986;
-    font-size:12px;
-}
-
-
-/* ================= ACCOUNT SHOP ================= */
-
-.account-grid{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:22px;
-}
-
-.account-card{
-    background:
-    linear-gradient(145deg,#131621,#0d0f15);
-
-    border:1px solid #292d39;
-
-    border-radius:18px;
-
-    padding:30px;
-
-    text-align:center;
-
-    transition:.3s;
-
-    position:relative;
-
-    overflow:hidden;
-}
-
-.account-card::before{
-    content:"";
-
-    position:absolute;
-
-    width:180px;
-    height:180px;
-
-    background:#7c3aed;
-
-    filter:blur(100px);
-
-    opacity:.08;
-
-    top:-80px;
-    right:-70px;
-}
-
-.account-card:hover{
-    transform:translateY(-7px);
-    border-color:#7048c0;
-}
-
-.account-icon{
-    font-size:60px;
-    margin-bottom:10px;
-}
-
-.account-card h3{
-    font-size:23px;
-    margin-bottom:7px;
-}
-
-.account-card p{
-    color:#858a98;
-    font-size:13px;
-    margin-bottom:20px;
-}
-
-.email-box{
-    margin-top:20px;
-
-    padding:16px;
-
-    background:#0a0c11;
-
-    border:1px solid #252936;
-
-    border-radius:10px;
-
-    color:#bca8ff;
-
-    direction:ltr;
-
-    word-break:break-all;
-}
-
-.account-note{
-    margin-top:22px;
-
-    padding:17px;
-
-    border-radius:10px;
-
-    background:#11131a;
-
-    border:1px dashed #353946;
-
-    color:#777d89;
-
-    font-size:12px;
-
-    text-align:center;
-}
-
-
-/* ================= INFO ================= */
-
-.info-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:17px;
-}
-
-.info-card{
-    background:#101219;
-    border:1px solid #252936;
-    border-radius:14px;
-    padding:25px;
-}
-
-.info-card-icon{
-    font-size:30px;
-    margin-bottom:7px;
-}
-
-.info-card h3{
-    margin-bottom:5px;
-}
-
-.info-card p{
-    color:#7e8390;
-    font-size:13px;
-}
-
-
-/* ================= GAME PAGES ================= */
-
-.game-page{
-    display:none;
-}
-
-.game-page:target{
-    display:block;
-}
-
-#home{
-    display:block;
-}
-
-body:has(.game-page:target) #home{
-    display:none;
-}
-
-
-/* ================= GAME HEADER ================= */
-
-.game-header{
-    margin:30px 0;
-    padding:clamp(23px,4vw,35px);
-    border-radius:16px;
-    border:1px solid #292d39;
-    background:linear-gradient(135deg,#161924,#0d0f15);
-}
-
-.game-header h1{
-    font-size:clamp(26px,4vw,38px);
-    margin-bottom:5px;
-}
-
-.game-header p{
-    color:#858a98;
-}
-
-.back{
-    display:inline-block;
-    margin-top:15px;
-    padding:8px 14px;
-    border:1px solid #303440;
-    border-radius:7px;
-    background:#181b24;
-    color:#bfc3cc;
-    font-size:13px;
-}
-
-.back:hover{
-    color:#fff;
-    border-color:#7c3aed;
-}
-
-
-/* ================= EMPTY ================= */
-
-.empty{
-    padding:65px 20px;
-    text-align:center;
-    background:#101219;
-    border:1px dashed #343845;
-    border-radius:15px;
-    color:#777c8a;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer{
-    margin-top:100px;
-    background:#0b0d12;
-    border-top:1px solid #252936;
-    padding:45px 20px;
-    text-align:center;
-}
-
-.footer-logo{
-    font-size:20px;
-    font-weight:bold;
-    color:#8b5cf6;
-}
-
-footer p{
-    color:#707582;
-    font-size:13px;
-    margin-top:6px;
-}
-
-.footer-links{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:15px;
-}
-
-.footer-links a{
-    color:#858a98;
-    font-size:13px;
-}
-
-.footer-links a:hover{
-    color:#fff;
-}
-
-
-/* ================= TABLET ================= */
-
-@media(max-width:1000px){
-
-    .header{
-        flex-direction:column;
-        padding:14px 0;
-    }
-
-    .featured{
-        grid-template-columns:1fr;
-    }
-
-    .games{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-
-    .info-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-
-/* ================= PHONE ================= */
-
-@media(max-width:600px){
-
-    .hero{
-        min-height:410px;
-        border-radius:17px;
-    }
-
-    .hero-content{
-        padding:30px 15px;
-        text-align:center;
-        margin:auto;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .btn{
-        width:min(100%,300px);
-        text-align:center;
-    }
-
-    nav{
-        width:100%;
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:5px;
-    }
-
-    nav a{
-        text-align:center;
-        font-size:11px;
-        padding:8px 3px;
-    }
-
-    .video-grid{
-        grid-template-columns:1fr;
-    }
-
-    .games{
-        grid-template-columns:1fr;
-    }
-
-    .info-grid{
-        grid-template-columns:1fr;
-    }
-
-    .account-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-}
-
-
-/* ================= SMALL PHONE ================= */
-
-@media(max-width:380px){
-
-    nav{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero h1{
-        font-size:29px;
-    }
-}
-
-
-/* ================= ARSHIYA GAME PRO UPGRADE ================= */
-:root{
-    --bg:#05060a;
-    --panel:rgba(15,17,27,.78);
-    --panel-strong:#10131d;
-    --line:rgba(139,92,246,.20);
-    --purple:#8b5cf6;
-    --purple-2:#a78bfa;
-    --cyan:#22d3ee;
-    --muted:#8e95a7;
-}
-
-html{scroll-padding-top:100px}
-
-body{
-    background:
-      radial-gradient(circle at 10% 10%,rgba(139,92,246,.10),transparent 25%),
-      radial-gradient(circle at 90% 35%,rgba(34,211,238,.07),transparent 24%),
-      linear-gradient(180deg,#05060a 0%,#080a10 55%,#05060a 100%);
-    background-attachment:fixed;
+        radial-gradient(circle at 10% 10%,rgba(53,104,255,.10),transparent 28%),
+        radial-gradient(circle at 90% 20%,rgba(124,60,255,.10),transparent 30%),
+        linear-gradient(180deg,#020817,#030b19 45%,#020817);
+    color:var(--text);
+    min-height:100vh;
 }
 
 body::before{
@@ -747,773 +58,1902 @@ body::before{
     position:fixed;
     inset:0;
     pointer-events:none;
-    opacity:.18;
     background-image:
-      linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
-    background-size:44px 44px;
-    mask-image:linear-gradient(to bottom,black,transparent 90%);
-    z-index:-1;
+        linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);
+    background-size:50px 50px;
+    mask-image:linear-gradient(to bottom,black,transparent);
 }
+
+/* ================= HEADER ================= */
 
 header{
-    background:rgba(5,6,10,.72);
-    border-bottom:1px solid rgba(255,255,255,.08);
-    box-shadow:0 10px 40px rgba(0,0,0,.22);
+    height:76px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(2,8,23,.88);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(70,110,190,.18);
 }
 
-.header{min-height:72px}
+.header-inner{
+    max-width:1500px;
+    height:100%;
+    margin:auto;
+
+    padding:0 25px;
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* LOGO */
 
 .logo{
-    letter-spacing:.5px;
-    text-shadow:0 0 24px rgba(139,92,246,.25);
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    min-width:190px;
+
+    text-decoration:none;
+    color:white;
 }
 
-.logo-purple{
-    background:linear-gradient(90deg,#a78bfa,#8b5cf6,#c084fc);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+.logo-icon{
+    width:54px;
+    height:54px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:
+        radial-gradient(circle at 50% 30%,#704cff,#2523b9);
+
+    box-shadow:
+        0 0 25px rgba(84,60,255,.35);
+
+    font-size:29px;
+}
+
+.logo-text{
+    line-height:1;
+}
+
+.logo-text strong{
+    display:block;
+    font-size:21px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+
+.logo-text span{
+    display:block;
+    margin-top:4px;
+
+    color:#654dff;
+
+    font-size:19px;
+    font-weight:900;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    flex:1;
 }
 
 nav a{
     position:relative;
-    border:1px solid transparent;
-}
 
-nav a:hover{
-    background:rgba(139,92,246,.10);
-    border-color:rgba(139,92,246,.18);
-}
+    padding:27px 16px;
 
-nav a::after{
-    content:"";
-    position:absolute;
-    left:12px;
-    right:12px;
-    bottom:4px;
-    height:2px;
-    border-radius:99px;
-    background:linear-gradient(90deg,var(--purple),var(--cyan));
-    transform:scaleX(0);
+    color:#b7c1d8;
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:500;
+
     transition:.25s;
 }
 
-nav a:hover::after{transform:scaleX(1)}
+nav a:hover{
+    color:white;
+}
+
+nav a.active{
+    color:white;
+}
+
+nav a.active::after{
+    content:"";
+
+    position:absolute;
+
+    height:3px;
+
+    left:12px;
+    right:12px;
+    bottom:0;
+
+    border-radius:5px;
+
+    background:linear-gradient(90deg,var(--purple),var(--blue));
+    box-shadow:0 0 15px var(--purple);
+}
+
+/* HEADER ACTIONS */
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.search{
+    width:225px;
+    height:43px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 14px;
+
+    border-radius:30px;
+
+    background:#081a38;
+    border:1px solid #122d59;
+}
+
+.search input{
+    flex:1;
+
+    border:0;
+    outline:0;
+
+    color:white;
+    background:transparent;
+
+    font-family:inherit;
+    font-size:12px;
+}
+
+.search span{
+    font-size:20px;
+}
+
+.icon-btn{
+    width:43px;
+    height:43px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:0;
+    border-radius:50%;
+
+    color:white;
+    background:transparent;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.25s;
+}
+
+.icon-btn:hover{
+    background:#102650;
+    transform:translateY(-2px);
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    max-width:1500px;
+    margin:auto;
+
+    padding:24px 25px 70px;
+}
+
+/* ================= HERO GRID ================= */
+
+.hero-grid{
+    display:grid;
+
+    grid-template-columns:minmax(0,3.5fr) minmax(290px,1fr);
+
+    gap:22px;
+
+    margin-bottom:23px;
+}
+
+/* HERO */
 
 .hero{
-    min-height:520px;
-    margin-top:30px;
-    border:1px solid rgba(167,139,250,.20);
-    box-shadow:0 30px 100px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.05);
+    position:relative;
+
+    min-height:350px;
+
+    overflow:hidden;
+
+    border:1px solid #1b3c72;
+    border-radius:13px;
+
     background:
-      radial-gradient(circle at 80% 20%,rgba(139,92,246,.28),transparent 28%),
-      radial-gradient(circle at 65% 80%,rgba(34,211,238,.12),transparent 24%),
-      linear-gradient(135deg,rgba(25,18,43,.96),rgba(7,9,15,.98));
+        linear-gradient(90deg,rgba(2,8,22,.97) 0%,rgba(3,11,30,.7) 42%,rgba(4,10,25,.05) 100%),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1500&q=90")
+        center/cover;
+
+    box-shadow:var(--shadow);
 }
 
 .hero::before{
     content:"";
+
     position:absolute;
-    width:560px;
-    height:560px;
-    right:-160px;
-    top:-190px;
-    border:1px solid rgba(167,139,250,.12);
-    border-radius:50%;
-    box-shadow:0 0 0 70px rgba(139,92,246,.025),0 0 0 140px rgba(139,92,246,.018);
+    inset:0;
+
+    background:
+        radial-gradient(circle at 70% 50%,rgba(99,51,255,.4),transparent 38%),
+        linear-gradient(90deg,transparent,rgba(25,74,180,.15));
 }
 
-.hero::after{
-    background:linear-gradient(135deg,var(--purple),var(--cyan));
-    opacity:.10;
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    max-width:600px;
+
+    padding:55px 45px;
 }
 
-.hero-content{padding:65px}
+.hero-tag{
+    display:inline-flex;
 
-.badge{
-    background:rgba(139,92,246,.10);
-    border-color:rgba(167,139,250,.30);
-    box-shadow:0 0 30px rgba(139,92,246,.08);
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    background:rgba(65,77,255,.15);
+    border:1px solid rgba(92,90,255,.35);
+
+    color:#aeb8ff;
+
+    font-size:12px;
+
+    margin-bottom:15px;
 }
 
 .hero h1{
-    letter-spacing:-1.5px;
-    text-shadow:0 12px 50px rgba(0,0,0,.35);
+    font-size:42px;
+    line-height:1.3;
+
+    font-weight:900;
+
+    margin-bottom:14px;
 }
 
 .hero h1 span{
-    background:linear-gradient(90deg,#c4b5fd,#8b5cf6,#22d3ee);
+    background:linear-gradient(90deg,#fff,#8471ff,#3caaff);
+
     -webkit-background-clip:text;
-    background-clip:text;
     color:transparent;
 }
 
-.hero p{color:#aeb5c5}
+.hero p{
+    color:#b5c0d8;
+    font-size:15px;
+    line-height:2;
+
+    margin-bottom:24px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:10px;
+}
 
 .btn{
-    border:1px solid transparent;
-    box-shadow:0 10px 30px rgba(0,0,0,.20);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    min-height:48px;
+
+    padding:0 22px;
+
+    border:0;
+    border-radius:10px;
+
+    color:white;
+    text-decoration:none;
+
+    font-family:inherit;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
 }
 
 .btn-primary{
-    background:linear-gradient(135deg,#7c3aed,#9b5cff);
+    background:linear-gradient(135deg,#6138ff,#313eff);
+
+    box-shadow:
+        0 8px 25px rgba(79,57,255,.3);
 }
 
 .btn-primary:hover{
-    box-shadow:0 14px 35px rgba(124,58,237,.28);
+    transform:translateY(-3px);
+    box-shadow:0 12px 35px rgba(79,57,255,.5);
 }
 
 .btn-dark{
-    background:rgba(255,255,255,.045);
-    border-color:rgba(255,255,255,.10);
-    backdrop-filter:blur(10px);
+    background:#091a36;
+    border:1px solid #1b3a70;
 }
 
-.section{margin:78px 0}
+.btn-dark:hover{
+    background:#102650;
+}
+
+/* HERO DOTS */
+
+.hero-dots{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:7px;
+}
+
+.hero-dots span{
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#60708e;
+}
+
+.hero-dots span.active{
+    width:25px;
+    border-radius:10px;
+    background:#fff;
+}
+
+/* ================= SIDE LOGIN ================= */
+
+.side-column{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.login-card{
+    padding:25px;
+
+    border-radius:13px;
+
+    background:
+        radial-gradient(circle at 80% 0%,rgba(74,50,255,.18),transparent 40%),
+        var(--panel);
+
+    border:1px solid #15396f;
+
+    box-shadow:var(--shadow);
+}
+
+.login-top{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin-bottom:20px;
+}
+
+.login-icon{
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:#11265b;
+
+    font-size:28px;
+}
+
+.login-card h3{
+    font-size:18px;
+}
+
+.login-card p{
+    color:#8392ad;
+    font-size:12px;
+    margin-top:4px;
+}
+
+.login-btn{
+    width:100%;
+    height:47px;
+
+    border:0;
+    border-radius:10px;
+
+    color:white;
+
+    background:linear-gradient(90deg,#5532ff,#303fff);
+
+    font-family:inherit;
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.login-features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+
+    margin-top:12px;
+}
+
+.login-feature{
+    padding:12px 5px;
+
+    text-align:center;
+
+    border-radius:9px;
+
+    background:#081a36;
+
+    border:1px solid #102d5b;
+
+    color:#8998b4;
+
+    font-size:10px;
+}
+
+.login-feature b{
+    display:block;
+
+    color:#6175ff;
+
+    font-size:20px;
+
+    margin-bottom:4px;
+}
+
+/* NEWS */
+
+.news-card{
+    flex:1;
+
+    padding:20px;
+
+    border-radius:13px;
+
+    background:var(--panel);
+
+    border:1px solid #15396f;
+}
 
 .section-title{
-    border-bottom-color:rgba(255,255,255,.08);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:15px;
 }
 
-.section-title h2 span{
-    background:linear-gradient(90deg,#a78bfa,#8b5cf6);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+.section-title h2{
+    font-size:17px;
 }
 
-.video-card,.game-card,.info-card,.account-card,.feature-box,.empty{
-    background:linear-gradient(145deg,rgba(18,21,32,.88),rgba(9,11,17,.90));
-    border-color:rgba(255,255,255,.08);
-    box-shadow:0 15px 50px rgba(0,0,0,.16);
-    backdrop-filter:blur(12px);
+.section-title a{
+    color:#657aff;
+    text-decoration:none;
+    font-size:11px;
 }
 
-.video-card:hover,.game-card:hover,.account-card:hover{
-    border-color:rgba(139,92,246,.42);
-    box-shadow:0 24px 65px rgba(0,0,0,.30),0 0 35px rgba(139,92,246,.07);
+.news-item{
+    display:flex;
+    gap:10px;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(80,110,170,.13);
 }
 
-.video-info{padding:22px}
-
-.tag{
-    background:rgba(139,92,246,.10);
-    border-color:rgba(167,139,250,.20);
+.news-item:last-child{
+    border-bottom:0;
 }
 
-.feature-box{
-    min-height:285px;
+.news-img{
+    width:54px;
+    height:54px;
+
+    flex-shrink:0;
+
+    border-radius:8px;
+
+    object-fit:cover;
 }
 
-.feature-box::after{
-    content:"";
-    position:absolute;
-    inset:auto -80px -120px auto;
-    width:260px;
-    height:260px;
-    border-radius:50%;
-    background:linear-gradient(135deg,rgba(139,92,246,.14),rgba(34,211,238,.05));
-    filter:blur(20px);
+.news-item h4{
+    font-size:12px;
+    line-height:1.8;
 }
 
-.game-card{
-    padding:30px 15px;
+.news-item small{
+    display:block;
+
+    color:#65738d;
+
+    font-size:9px;
+
+    margin-top:3px;
 }
 
-.game-icon{
-    filter:drop-shadow(0 8px 18px rgba(139,92,246,.16));
+/* ================= CATEGORIES ================= */
+
+.categories{
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:14px;
+
+    margin-bottom:25px;
 }
 
-.account-card{
-    padding:34px;
-}
+.category{
+    position:relative;
 
-.email-box{
-    background:rgba(0,0,0,.22);
-    border-color:rgba(255,255,255,.08);
-}
+    height:190px;
 
-.account-note{
-    background:rgba(255,255,255,.025);
-    border-color:rgba(255,255,255,.10);
-}
+    overflow:hidden;
 
-.info-card{
+    border-radius:11px;
+
+    border:1px solid #153c7b;
+
+    text-decoration:none;
+    color:white;
+
+    background:#06142b;
+
     transition:.3s;
 }
 
-.info-card:hover{
-    transform:translateY(-5px);
-    border-color:rgba(139,92,246,.28);
-}
+.category::before{
+    content:"";
 
-.game-header{
+    position:absolute;
+    inset:0;
+
     background:
-      radial-gradient(circle at 90% 20%,rgba(139,92,246,.15),transparent 25%),
-      linear-gradient(135deg,rgba(22,25,36,.94),rgba(9,11,17,.96));
-    border-color:rgba(167,139,250,.18);
-    box-shadow:0 20px 60px rgba(0,0,0,.25);
+        linear-gradient(0deg,rgba(2,10,28,.97),rgba(2,10,28,.05) 75%),
+        var(--image) center/cover;
 }
 
-.back{
-    background:rgba(255,255,255,.04);
-    border-color:rgba(255,255,255,.10);
+.category:hover{
+    transform:translateY(-6px);
+
+    border-color:#416eff;
+
+    box-shadow:
+        0 15px 40px rgba(30,70,255,.22);
 }
 
-.empty{
-    min-height:260px;
+.category-content{
+    position:absolute;
+
+    right:15px;
+    left:15px;
+    bottom:13px;
+}
+
+.category h3{
+    font-size:15px;
+
+    margin-bottom:5px;
+}
+
+.category p{
+    color:#9aa8c2;
+
+    font-size:10px;
+}
+
+.category-arrow{
+    position:absolute;
+
+    left:13px;
+    bottom:13px;
+
+    width:32px;
+    height:32px;
+
     display:flex;
-    flex-direction:column;
     align-items:center;
     justify-content:center;
+
+    border-radius:50%;
+
+    background:#102f78;
+    border:1px solid #2e65ff;
+
+    font-size:17px;
 }
+
+/* ================= CONTENT LAYOUT ================= */
+
+.content-layout{
+    display:grid;
+
+    grid-template-columns:minmax(0,3.5fr) minmax(280px,1fr);
+
+    gap:22px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products-box{
+    border:1px solid #15396f;
+
+    border-radius:13px;
+
+    background:rgba(5,16,35,.8);
+
+    padding:20px;
+}
+
+.products{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+}
+
+.product{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    background:#07162f;
+
+    border:1px solid #17396d;
+
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+
+    border-color:#4c64ff;
+
+    box-shadow:0 12px 35px rgba(41,68,255,.18);
+}
+
+.product-image{
+    width:100%;
+    height:150px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.badge{
+    position:absolute;
+
+    top:9px;
+    right:9px;
+
+    padding:4px 8px;
+
+    border-radius:6px;
+
+    background:#5141ff;
+
+    font-size:9px;
+    font-weight:700;
+}
+
+.product-body{
+    padding:12px;
+}
+
+.product-title{
+    font-size:12px;
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.product-type{
+    color:#6f7f9c;
+
+    font-size:9px;
+
+    margin-bottom:12px;
+}
+
+.product-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.price{
+    color:#bd54ff;
+
+    font-size:12px;
+    font-weight:800;
+}
+
+.price span{
+    color:#7e8ba2;
+    font-size:8px;
+}
+
+.cart{
+    width:31px;
+    height:31px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:7px;
+
+    background:#233eff;
+
+    color:white;
+
+    cursor:pointer;
+
+    border:0;
+}
+
+/* ================= SIDEBAR PROMO ================= */
+
+.promo{
+    min-height:210px;
+
+    border-radius:13px;
+
+    padding:28px 22px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    overflow:hidden;
+
+    border:1px solid #4935ff;
+
+    background:
+        radial-gradient(circle at 70% 20%,rgba(110,54,255,.5),transparent 30%),
+        linear-gradient(135deg,#08183a,#100b3b);
+
+    box-shadow:0 0 45px rgba(79,54,255,.12);
+}
+
+.promo-icon{
+    font-size:40px;
+    margin-bottom:5px;
+}
+
+.promo h2{
+    font-size:23px;
+    margin-bottom:7px;
+}
+
+.promo h2 span{
+    color:#8d70ff;
+}
+
+.promo p{
+    color:#9ba8c2;
+    font-size:11px;
+    line-height:2;
+}
+
+/* ================= SECTION ================= */
+
+.full-section{
+    margin-top:25px;
+
+    padding:22px;
+
+    border:1px solid #15396f;
+    border-radius:13px;
+
+    background:rgba(5,16,35,.75);
+}
+
+.video-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+}
+
+.video-card{
+    overflow:hidden;
+
+    border-radius:11px;
+
+    background:#06142a;
+
+    border:1px solid #163a70;
+}
+
+.video-card iframe{
+    width:100%;
+    aspect-ratio:16/9;
+
+    border:0;
+
+    display:block;
+}
+
+.video-card div{
+    padding:13px;
+}
+
+.video-card h3{
+    font-size:13px;
+}
+
+.video-card p{
+    color:#71819c;
+    font-size:10px;
+
+    margin-top:5px;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
-    background:rgba(5,7,11,.82);
-    border-top-color:rgba(255,255,255,.08);
-    box-shadow:0 -20px 70px rgba(0,0,0,.18);
+    margin-top:40px;
+
+    border-top:1px solid #10284f;
+
+    background:#020714;
 }
 
-.footer-logo{
-    background:linear-gradient(90deg,#c4b5fd,#8b5cf6,#22d3ee);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+.footer-inner{
+    max-width:1500px;
+    margin:auto;
+
+    padding:35px 25px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:30px;
+}
+
+.footer-brand h2{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.footer-brand h2 span{
+    color:#684aff;
+}
+
+.footer-brand p{
+    color:#71819b;
+    font-size:11px;
+    line-height:2;
+    max-width:400px;
+}
+
+.footer-col h3{
+    font-size:13px;
+    margin-bottom:13px;
+}
+
+.footer-col a{
+    display:block;
+
+    color:#73819a;
+    text-decoration:none;
+
+    font-size:11px;
+
+    margin:8px 0;
+
+    transition:.2s;
+}
+
+.footer-col a:hover{
+    color:#6579ff;
+}
+
+.copyright{
+    text-align:center;
+
+    padding:15px;
+
+    color:#506079;
+
+    border-top:1px solid #0b1d3b;
+
+    font-size:10px;
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu{
+    display:none;
+
+    width:43px;
+    height:43px;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #193666;
+    border-radius:10px;
+
+    background:#07162f;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+
+    nav a{
+        padding-left:9px;
+        padding-right:9px;
+        font-size:12px;
+    }
+
+    .search{
+        width:170px;
+    }
+
+    .categories{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+
+    .header-inner{
+        gap:10px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:flex;
+    }
+
+    .logo{
+        min-width:auto;
+        margin-left:auto;
+    }
+
+    .header-actions{
+        margin-right:auto;
+    }
+
+    .search{
+        display:none;
+    }
+
+    .hero-grid,
+    .content-layout{
+        grid-template-columns:1fr;
+    }
+
+    .side-column{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero{
+        min-height:400px;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 @media(max-width:600px){
-    .hero{min-height:450px;margin-top:18px}
-    .hero-content{padding:38px 18px}
-    .hero h1{letter-spacing:-.5px}
-    .section{margin:55px 0}
-    .feature-box{min-height:245px}
+
+    .container{
+        padding:15px 12px 50px;
+    }
+
+    header{
+        height:65px;
+    }
+
+    .header-inner{
+        padding:0 12px;
+    }
+
+    .logo-icon{
+        width:43px;
+        height:43px;
+        font-size:23px;
+    }
+
+    .logo-text strong{
+        font-size:16px;
+    }
+
+    .logo-text span{
+        font-size:14px;
+    }
+
+    .icon-btn{
+        width:38px;
+        height:38px;
+    }
+
+    .hero{
+        min-height:420px;
+
+        background:
+            linear-gradient(0deg,rgba(2,8,22,.96),rgba(2,8,22,.25)),
+            url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85")
+            center/cover;
+    }
+
+    .hero-content{
+        padding:35px 25px;
+    }
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    .hero p{
+        font-size:12px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .side-column{
+        display:flex;
+    }
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .category{
+        height:165px;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+        gap:9px;
+    }
+
+    .product-image{
+        height:120px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+    }
 }
 
-@media(prefers-reduced-motion:no-preference){
-    .hero{animation:heroGlow 8s ease-in-out infinite alternate}
-    @keyframes heroGlow{
-        from{box-shadow:0 30px 100px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.05)}
-        to{box-shadow:0 30px 100px rgba(0,0,0,.35),0 0 55px rgba(139,92,246,.06),inset 0 1px 0 rgba(255,255,255,.05)}
+@media(max-width:390px){
+
+    .categories{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .category{
+        height:145px;
+    }
+
+    .product-title{
+        font-size:10px;
+    }
+
+    .price{
+        font-size:10px;
     }
 }
 
 </style>
-
 </head>
 
-
 <body>
-
 
 <!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="header">
+<div class="header-inner">
 
-<a href="#home" class="logo">
-🎮
-<span class="logo-purple">ARSHIYA</span>
-GAME
-</a>
+    <a href="#" class="logo">
 
+        <div class="logo-icon">🎮</div>
 
-<nav>
+        <div class="logo-text">
+            <strong>ARSHIYA</strong>
+            <span>GAME</span>
+        </div>
 
-<a href="#home">🏠 خانه</a>
+    </a>
 
-<a href="#videos">🎥 ویدیوها</a>
+    <button class="mobile-menu" onclick="toggleMenu()">☰</button>
 
-<a href="#games">🎮 بازی‌ها</a>
+    <nav id="mainNav">
 
-<a href="#wow">⚔️ WoW</a>
+        <a href="#" class="active">خانه</a>
+        <a href="#games">بازی‌ها</a>
+        <a href="#accounts">اکانت‌ها</a>
+        <a href="#shop">فروشگاه</a>
+        <a href="#tutorials">آموزش‌ها</a>
+        <a href="#news">اخبار و مقالات</a>
+        <a href="#contact">تماس با ما</a>
 
-<a href="#minecraft">⛏️ Minecraft</a>
+    </nav>
 
-<a href="#cod">🎯 Call of Duty</a>
+    <div class="header-actions">
 
-<a href="#pes">⚽ PES 2017</a>
+        <div class="search">
 
-<a href="#accounts">🛒 فروش اکانت</a>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="جستجو در سایت..."
+                onkeyup="searchProducts()"
+            >
 
-</nav>
+            <span>⌕</span>
+
+        </div>
+
+        <button class="icon-btn" onclick="login()">
+            ♙
+        </button>
+
+        <button class="icon-btn" onclick="openCart()">
+            🛒
+        </button>
+
+    </div>
 
 </div>
 
 </header>
 
 
-
-<!-- ================= HOME ================= -->
-
-<div id="home">
+<main class="container">
 
 
-<section class="hero">
+<!-- ================= HERO ================= -->
 
-<div class="hero-content">
+<section class="hero-grid">
 
-<div class="badge">
-🔥 به Arshiya Game خوش آمدید
-</div>
+<div class="hero">
 
-<h1>
-دنیای
-<span>گیمینگ</span>
-عرشیا
-</h1>
+    <div class="hero-content">
 
-<p>
-ویدیوهای گیمینگ، آموزش‌ها،
-لحظات جذاب و محتوای بازی‌های مختلف
-را اینجا دنبال کن.
-</p>
+        <div class="hero-tag">
+            🎮 مرجع گیمینگ عرشیا
+        </div>
 
-<div class="hero-buttons">
+        <h1>
+            به دنیای
+            <span>بازی‌ها</span>
+            خوش آمدید
+        </h1>
 
-<a href="#videos"
-class="btn btn-primary">
-🎥 آخرین ویدیوها
-</a>
+        <p>
+            خرید اکانت، خدمات گیمینگ، آموزش و جدیدترین
+            اخبار دنیای بازی را در Arshiya Game دنبال کنید.
+        </p>
 
-<a href="#accounts"
-class="btn btn-dark">
-🛒 فروش اکانت
-</a>
+        <div class="hero-buttons">
 
-</div>
+            <a href="#shop" class="btn btn-primary">
+                مشاهده فروشگاه ←
+            </a>
 
-</div>
+            <a href="#games" class="btn btn-dark">
+                مشاهده بازی‌ها
+            </a>
 
-</section>
+        </div>
 
+    </div>
 
-
-<main>
-
-
-<!-- ================= VIDEOS ================= -->
-
-<section class="section" id="videos">
-
-<div class="section-title">
-
-<h2>
-🔥
-<span>آخرین</span>
-ویدیوها
-</h2>
-
-<small>
-جدیدترین ویدیوهای سایت
-</small>
+    <div class="hero-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+    </div>
 
 </div>
 
 
-<div class="video-grid">
+<div class="side-column">
+
+    <div class="login-card">
+
+        <div class="login-top">
+
+            <div class="login-icon">
+                🎮
+            </div>
+
+            <div>
+                <h3>ورود / ثبت نام</h3>
+                <p>برای دسترسی به امکانات ویژه</p>
+            </div>
+
+        </div>
+
+        <button class="login-btn" onclick="login()">
+            ♙ ورود به حساب کاربری
+        </button>
+
+        <div class="login-features">
+
+            <div class="login-feature">
+                <b>🎁</b>
+                تخفیف‌های ویژه
+            </div>
+
+            <div class="login-feature">
+                <b>◷</b>
+                پیگیری خرید
+            </div>
+
+            <div class="login-feature">
+                <b>▣</b>
+                مدیریت سفارشات
+            </div>
+
+        </div>
+
+    </div>
 
 
-<!-- WOW -->
+    <div class="news-card" id="news">
 
-<article class="video-card">
+        <div class="section-title">
 
-<iframe
-class="video-frame"
-src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
-allowfullscreen>
-</iframe>
+            <h2>آخرین اخبار و مقالات</h2>
 
-<div class="video-info">
+            <a href="#">همه اخبار ←</a>
 
-<span class="tag">
-World of Warcraft
-</span>
+        </div>
 
-<h3>
-⚔️ ویدیوی World of Warcraft
-</h3>
+        <div class="news-item">
 
-<p>
-ویدیوی World of Warcraft
-با زیرنویس فارسی.
-</p>
+            <img
+                class="news-img"
+                src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=200&q=80"
+            >
 
-</div>
+            <div>
+                <h4>بهترین بازی‌های گیمینگ برای شروع یک ماجراجویی جدید</h4>
+                <small>۲ ساعت پیش</small>
+            </div>
 
-</article>
+        </div>
 
+        <div class="news-item">
 
-<!-- MINECRAFT -->
+            <img
+                class="news-img"
+                src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=200&q=80"
+            >
 
-<article class="video-card">
+            <div>
+                <h4>راهنمای خرید امن اکانت بازی</h4>
+                <small>۵ ساعت پیش</small>
+            </div>
 
-<iframe
-class="video-frame"
-src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
-allowfullscreen>
-</iframe>
+        </div>
 
-<div class="video-info">
+        <div class="news-item">
 
-<span class="tag">
-Minecraft
-</span>
+            <img
+                class="news-img"
+                src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?auto=format&fit=crop&w=200&q=80"
+            >
 
-<h3>
-🚀 آموزش ساخت موشک در Minecraft
-</h3>
+            <div>
+                <h4>چطور تجربه بهتری از بازی‌های آنلاین داشته باشیم؟</h4>
+                <small>دیروز</small>
+            </div>
 
-<p>
-آموزش ساخت موشک در Minecraft
-بدون ماد.
-</p>
+        </div>
 
-</div>
-
-</article>
-
-
-</div>
-
-</section>
-
-
-
-<!-- ================= FEATURED ================= -->
-
-<section class="section">
-
-<div class="section-title">
-
-<h2>
-⭐
-<span>ویژه</span>
-</h2>
-
-<small>
-پیشنهاد Arshiya Game
-</small>
-
-</div>
-
-
-<div class="featured">
-
-
-<div class="feature-box">
-
-<div class="feature-box-content">
-
-<div class="feature-icon">
-🚀
-</div>
-
-<h3>
-Minecraft
-</h3>
-
-<p>
-آموزش ساخت موشک در Minecraft
-بدون ماد.
-</p>
-
-<br>
-
-<a href="#minecraft"
-class="btn btn-primary">
-مشاهده ویدیو
-</a>
-
-</div>
-
-</div>
-
-
-<div class="feature-box">
-
-<div class="feature-box-content">
-
-<div class="feature-icon">
-⚔️
-</div>
-
-<h3>
-World of Warcraft
-</h3>
-
-<p>
-ویدیوهای WoW را در
-صفحه اختصاصی بازی ببین.
-</p>
-
-<br>
-
-<a href="#wow"
-class="btn btn-dark">
-صفحه WoW
-</a>
-
-</div>
-
-</div>
-
+    </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ================= GAMES ================= -->
 
-<section class="section" id="games">
+<section id="games">
 
 <div class="section-title">
 
-<h2>
-🎮
-<span>بازی‌ها</span>
-</h2>
+    <h2>بازی‌های محبوب</h2>
 
-<small>
-بخش‌های سایت
-</small>
+    <a href="#">مشاهده همه ←</a>
 
 </div>
 
 
-<div class="games">
+<div class="categories">
+
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1605895448144-6b3e8a6f7a87?auto=format&fit=crop&w=700&q=80')"
+    >
+
+        <div class="category-content">
+
+            <h3>Minecraft</h3>
+
+            <p>اکانت، سرور و خدمات</p>
+
+        </div>
+
+        <div class="category-arrow">←</div>
+
+    </a>
 
 
-<a href="#wow" class="game-card">
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1614294148960-9aa740632a87?auto=format&fit=crop&w=700&q=80')"
+    >
 
-<div class="game-icon">⚔️</div>
+        <div class="category-content">
 
-<h3>World of Warcraft</h3>
+            <h3>World of Warcraft</h3>
 
-<p>ویدیوهای WoW</p>
+            <p>اکانت و آیتم</p>
 
-</a>
+        </div>
 
+        <div class="category-arrow">←</div>
 
-<a href="#minecraft" class="game-card">
-
-<div class="game-icon">⛏️</div>
-
-<h3>Minecraft</h3>
-
-<p>آموزش و ویدیو</p>
-
-</a>
+    </a>
 
 
-<a href="#cod" class="game-card">
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=700&q=80')"
+    >
 
-<div class="game-icon">🎯</div>
+        <div class="category-content">
 
-<h3>Call of Duty</h3>
+            <h3>Call of Duty</h3>
 
-<p>ویدیوهای کالاف</p>
+            <p>اکانت و خدمات</p>
 
-</a>
+        </div>
+
+        <div class="category-arrow">←</div>
+
+    </a>
 
 
-<a href="#pes" class="game-card">
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=700&q=80')"
+    >
 
-<div class="game-icon">⚽</div>
+        <div class="category-content">
 
-<h3>PES 2017</h3>
+            <h3>PES / eFootball</h3>
 
-<p>ویدیوهای PES</p>
+            <p>اکانت و آیتم</p>
 
-</a>
+        </div>
 
+        <div class="category-arrow">←</div>
+
+    </a>
+
+
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=700&q=80')"
+    >
+
+        <div class="category-content">
+
+            <h3>Valorant</h3>
+
+            <p>اکانت و خدمات</p>
+
+        </div>
+
+        <div class="category-arrow">←</div>
+
+    </a>
+
+
+    <a
+        href="#"
+        class="category"
+        style="--image:url('https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=700&q=80')"
+    >
+
+        <div class="category-content">
+
+            <h3>Steam</h3>
+
+            <p>گیفت کارت و اکانت</p>
+
+        </div>
+
+        <div class="category-arrow">←</div>
+
+    </a>
 
 </div>
 
 </section>
 
 
+<!-- ================= PRODUCTS ================= -->
 
-<!-- ================= ACCOUNT SHOP ================= -->
+<section class="content-layout" id="shop">
 
-<section class="section" id="accounts">
+<div class="products-box">
 
-<div class="section-title">
+    <div class="section-title">
 
-<h2>
-🛒
-<span>فروش</span>
-اکانت
-</h2>
+        <h2>👑 محبوب‌ترین محصولات</h2>
 
-<small>
-World of Warcraft و Call of Duty
-</small>
+        <a href="#">مشاهده همه ←</a>
+
+    </div>
+
+
+    <div class="products" id="productList">
+
+
+        <div class="product">
+
+            <span class="badge">پیشنهاد ویژه</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1605895448144-6b3e8a6f7a87?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    اکانت ویژه Minecraft
+                </div>
+
+                <div class="product-type">
+                    اکانت پریمیوم
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۸۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('اکانت Minecraft')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product">
+
+            <span class="badge">ویژه</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    اکانت World of Warcraft
+                </div>
+
+                <div class="product-type">
+                    اکانت استاندارد
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۱۹۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('اکانت World of Warcraft')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product">
+
+            <span class="badge">پیشنهاد ویژه</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    اکانت Call of Duty
+                </div>
+
+                <div class="product-type">
+                    اکانت مولتی‌پلیر
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۱۵۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('اکانت Call of Duty')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product">
+
+            <span class="badge">پیشنهاد ویژه</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    اکانت eFootball
+                </div>
+
+                <div class="product-type">
+                    اکانت کامل
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۱۲۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('اکانت eFootball')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product">
+
+            <span class="badge">جدید</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    اکانت Valorant
+                </div>
+
+                <div class="product-type">
+                    اکانت ویژه
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۱۱۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('اکانت Valorant')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product">
+
+            <span class="badge">ویژه</span>
+
+            <img
+                class="product-image"
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80"
+            >
+
+            <div class="product-body">
+
+                <div class="product-title">
+                    گیفت کارت Steam
+                </div>
+
+                <div class="product-type">
+                    گیفت کارت دیجیتال
+                </div>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+                        ۲۹۹,۰۰۰
+                        <span>تومان</span>
+                    </div>
+
+                    <button class="cart" onclick="addCart('گیفت کارت Steam')">
+                        🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 </div>
 
 
-<div class="account-grid">
+<!-- PROMO -->
 
+<aside class="promo">
 
-<!-- WOW ACCOUNT -->
+    <div class="promo-icon">🎮</div>
 
-<div class="account-card">
+    <h2>
+        <span>Arshiya Game</span>
+    </h2>
 
-<div class="account-icon">
-⚔️
-</div>
+    <h2>
+        بازی رو جدی بگیر!
+    </h2>
 
-<h3>
-اکانت World of Warcraft
-</h3>
+    <p>
+        بهترین اکانت‌ها، خدمات گیمینگ و محصولات مورد نیاز
+        گیمرها در یکجا.
+    </p>
 
-<p>
-برای اطلاع از اکانت‌های موجود
-و شرایط فروش، از طریق ایمیل
-با ما در ارتباط باشید.
-</p>
-
-<a
-class="btn btn-primary"
-href="mailto:arshiya.site@gmail.com?subject=درخواست خرید اکانت World of Warcraft">
-
-📩 تماس برای خرید
-
-</a>
-
-<div class="email-box">
-arshiya.site@gmail.com
-</div>
-
-</div>
-
-
-
-<!-- COD ACCOUNT -->
-
-<div class="account-card">
-
-<div class="account-icon">
-🎯
-</div>
-
-<h3>
-اکانت Call of Duty
-</h3>
-
-<p>
-برای اطلاع از اکانت‌های موجود
-و شرایط فروش، از طریق ایمیل
-با ما در ارتباط باشید.
-</p>
-
-<a
-class="btn btn-primary"
-href="mailto:arshiya.site@gmail.com?subject=درخواست خرید اکانت Call of Duty">
-
-📩 تماس برای خرید
-
-</a>
-
-<div class="email-box">
-arshiya.site@gmail.com
-</div>
-
-</div>
-
-
-</div>
-
-
-<div class="account-note">
-
-⚠️ توجه: قبل از هر معامله، قوانین و شرایط استفاده
-از بازی مربوطه را بررسی کنید. سایت Arshiya Game
-اطلاعات تماس فروشنده را ارائه می‌کند و شرایط هر
-معامله باید قبل از پرداخت به‌طور کامل مشخص شود.
-
-</div>
-
+</aside>
 
 </section>
 
+
+<!-- ================= VIDEOS ================= -->
+
+<section class="full-section" id="tutorials">
+
+<div class="section-title">
+
+    <h2>🎬 آخرین ویدیوها</h2>
+
+    <a href="#">مشاهده همه ←</a>
+
+</div>
+
+
+<div class="video-grid">
+
+    <div class="video-card">
+
+        <iframe
+            src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
+            allowfullscreen>
+        </iframe>
+
+        <div>
+            <h3>گیم‌پلی World of Warcraft</h3>
+            <p>آخرین ویدیوهای گیمینگ Arshiya Game</p>
+        </div>
+
+    </div>
+
+
+    <div class="video-card">
+
+        <iframe
+            src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
+            allowfullscreen>
+        </iframe>
+
+        <div>
+            <h3>گیم‌پلی Minecraft</h3>
+            <p>ماجراجویی‌های جدید در دنیای Minecraft</p>
+        </div>
+
+    </div>
+
+
+    <div class="video-card">
+
+        <div style="
+            height:100%;
+            min-height:180px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:linear-gradient(135deg,#071a3c,#130b42);
+            font-size:50px;
+        ">
+            🎮
+        </div>
+
+        <div>
+            <h3>ویدیوهای جدید به‌زودی</h3>
+            <p>منتظر محتوای جدید Arshiya Game باشید</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
 
 
 <!-- ================= ABOUT ================= -->
 
-<section class="section">
+<section class="full-section" id="accounts">
 
 <div class="section-title">
 
-<h2>
-💜
-<span>درباره</span>
-Arshiya Game
-</h2>
+    <h2>🔥 چرا Arshiya Game؟</h2>
 
 </div>
 
+<div style="
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+">
 
-<div class="info-grid">
+    <div class="login-feature" style="padding:25px;">
+        <b>⚡</b>
+        تحویل سریع
+        <br>
+        <small>سفارش‌ها در سریع‌ترین زمان ممکن</small>
+    </div>
 
+    <div class="login-feature" style="padding:25px;">
+        <b>🛡️</b>
+        خرید امن
+        <br>
+        <small>تجربه خرید مطمئن برای گیمرها</small>
+    </div>
 
-<div class="info-card">
-
-<div class="info-card-icon">
-🎥
-</div>
-
-<h3>
-ویدیوهای گیمینگ
-</h3>
-
-<p>
-ویدیوهای جدید بازی‌ها
-در یکجا.
-</p>
-
-</div>
-
-
-<div class="info-card">
-
-<div class="info-card-icon">
-🎮
-</div>
-
-<h3>
-بازی‌های مختلف
-</h3>
-
-<p>
-از Minecraft و WoW
-تا PES و Call of Duty.
-</p>
-
-</div>
-
-
-<div class="info-card">
-
-<div class="info-card-icon">
-📱
-</div>
-
-<h3>
-مناسب همه دستگاه‌ها
-</h3>
-
-<p>
-طراحی شده برای گوشی،
-تبلت و کامپیوتر.
-</p>
-
-</div>
-
+    <div class="login-feature" style="padding:25px;">
+        <b>💬</b>
+        پشتیبانی
+        <br>
+        <small>پاسخگویی و پشتیبانی کاربران</small>
+    </div>
 
 </div>
 
@@ -1521,259 +1961,273 @@ Arshiya Game
 
 
 </main>
-
-</div>
-
-
-
-<!-- ================= WOW PAGE ================= -->
-
-<section class="game-page" id="wow">
-
-<main>
-
-<div class="game-header">
-
-<h1>⚔️ World of Warcraft</h1>
-
-<p>
-ویدیوهای World of Warcraft
-</p>
-
-<a href="#home" class="back">
-← برگشت به خانه
-</a>
-
-</div>
-
-
-<div class="video-grid">
-
-<article class="video-card">
-
-<iframe
-class="video-frame"
-src="https://www.aparat.com/video/video/embed/videohash/spJ43/vt/frame"
-allowfullscreen>
-</iframe>
-
-<div class="video-info">
-
-<span class="tag">
-World of Warcraft
-</span>
-
-<h3>
-⚔️ ویدیوی World of Warcraft
-</h3>
-
-<p>
-ویدیوی World of Warcraft
-با زیرنویس فارسی.
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-</main>
-
-</section>
-
-
-
-<!-- ================= MINECRAFT PAGE ================= -->
-
-<section class="game-page" id="minecraft">
-
-<main>
-
-<div class="game-header">
-
-<h1>⛏️ Minecraft</h1>
-
-<p>
-ویدیوهای Minecraft و آموزش‌های بازی
-</p>
-
-<a href="#home" class="back">
-← برگشت به خانه
-</a>
-
-</div>
-
-
-<div class="video-grid">
-
-<article class="video-card">
-
-<iframe
-class="video-frame"
-src="https://www.aparat.com/video/video/embed/videohash/ijdl6h4/vt/frame"
-allowfullscreen>
-</iframe>
-
-<div class="video-info">
-
-<span class="tag">
-Minecraft
-</span>
-
-<h3>
-🚀 آموزش ساخت موشک در Minecraft
-</h3>
-
-<p>
-آموزش ساخت موشک در Minecraft
-بدون ماد.
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-</main>
-
-</section>
-
-
-
-<!-- ================= COD PAGE ================= -->
-
-<section class="game-page" id="cod">
-
-<main>
-
-<div class="game-header">
-
-<h1>🎯 Call of Duty</h1>
-
-<p>
-ویدیوهای Call of Duty
-</p>
-
-<a href="#home" class="back">
-← برگشت به خانه
-</a>
-
-</div>
-
-
-<div class="empty">
-
-🎯
-
-<br><br>
-
-هنوز ویدیوی Call of Duty
-اضافه نشده.
-
-<br><br>
-
-به‌زودی ویدیوهای کالاف
-اینجا قرار می‌گیرند.
-
-</div>
-
-</main>
-
-</section>
-
-
-
-<!-- ================= PES PAGE ================= -->
-
-<section class="game-page" id="pes">
-
-<main>
-
-<div class="game-header">
-
-<h1>⚽ PES 2017</h1>
-
-<p>
-ویدیوهای PES 2017
-</p>
-
-<a href="#home" class="back">
-← برگشت به خانه
-</a>
-
-</div>
-
-
-<div class="empty">
-
-⚽
-
-<br><br>
-
-هنوز ویدیوی PES 2017
-اضافه نشده.
-
-<br><br>
-
-به‌زودی ویدیوهای PES 2017
-اینجا قرار می‌گیرند.
-
-</div>
-
-</main>
-
-</section>
-
 
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer id="contact">
 
-<div class="footer-logo">
-🎮 ARSHIYA GAME
+<div class="footer-inner">
+
+    <div class="footer-brand">
+
+        <h2>
+            ARSHIYA <span>GAME</span>
+        </h2>
+
+        <p>
+            Arshiya Game یک مجموعه گیمینگ برای ارائه
+            اکانت‌ها، خدمات، محصولات و محتوای مرتبط با
+            دنیای بازی است.
+        </p>
+
+    </div>
+
+
+    <div class="footer-col">
+
+        <h3>دسترسی سریع</h3>
+
+        <a href="#">خانه</a>
+        <a href="#games">بازی‌ها</a>
+        <a href="#shop">فروشگاه</a>
+        <a href="#tutorials">آموزش‌ها</a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+        <h3>خدمات</h3>
+
+        <a href="#">اکانت بازی</a>
+        <a href="#">گیفت کارت</a>
+        <a href="#">خدمات گیمینگ</a>
+        <a href="#">پشتیبانی</a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+        <h3>ارتباط با ما</h3>
+
+        <a href="mailto:arshiya.site@gmail.com">
+            arshiya.site@gmail.com
+        </a>
+
+        <a href="#">
+            Instagram
+        </a>
+
+        <a href="#">
+            Telegram
+        </a>
+
+    </div>
+
 </div>
 
-<p>
-دنیای گیمینگ عرشیا
-</p>
 
+<div class="copyright">
 
-<div class="footer-links">
-
-<a href="#home">خانه</a>
-
-<a href="#videos">ویدیوها</a>
-
-<a href="#games">بازی‌ها</a>
-
-<a href="#accounts">فروش اکانت</a>
-
-<a href="#minecraft">Minecraft</a>
-
-<a href="#wow">WoW</a>
-
-<a href="#cod">Call of Duty</a>
-
-<a href="#pes">PES 2017</a>
+    © 2026 Arshiya Game — تمامی حقوق محفوظ است.
 
 </div>
-
-
-<p>
-Minecraft • World of Warcraft •
-Call of Duty • PES 2017
-</p>
-
-<p>
-© 2026 Arshiya Game
-</p>
 
 </footer>
 
 
-</body>
+<script>
 
+/* ================= MOBILE MENU ================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("mainNav");
+
+    if(nav.style.display === "flex"){
+
+        nav.style.display = "none";
+
+    }else{
+
+        nav.style.display = "flex";
+
+        nav.style.position = "absolute";
+        nav.style.top = "65px";
+        nav.style.right = "10px";
+        nav.style.left = "10px";
+
+        nav.style.flexDirection = "column";
+        nav.style.padding = "10px";
+
+        nav.style.background = "#06142b";
+        nav.style.border = "1px solid #18386b";
+        nav.style.borderRadius = "12px";
+
+        nav.style.boxShadow = "0 20px 50px rgba(0,0,0,.5)";
+
+        nav.querySelectorAll("a").forEach(a=>{
+            a.style.padding = "12px";
+            a.style.width = "100%";
+        });
+
+    }
+
+}
+
+
+/* ================= LOGIN ================= */
+
+function login(){
+
+    alert(
+        "سیستم ورود Arshiya Game\n\n" +
+        "بخش حساب کاربری به‌زودی فعال می‌شود."
+    );
+
+}
+
+
+/* ================= CART ================= */
+
+let cartCount = 0;
+
+function addCart(product){
+
+    cartCount++;
+
+    alert(
+        "✅ محصول به سبد خرید اضافه شد:\n\n" +
+        product +
+        "\n\nتعداد محصولات: " +
+        cartCount
+    );
+
+}
+
+
+function openCart(){
+
+    alert(
+        "🛒 سبد خرید\n\n" +
+        "تعداد محصولات: " +
+        cartCount
+    );
+
+}
+
+
+/* ================= SEARCH ================= */
+
+function searchProducts(){
+
+    const input =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const products =
+        document.querySelectorAll(".product");
+
+    products.forEach(product=>{
+
+        const text =
+            product.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            product.style.display = "";
+
+        }else{
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* ================= SIMPLE HERO SLIDER ================= */
+
+const heroSlides = [
+
+    {
+        title:"به دنیای بازی‌ها خوش آمدید",
+        text:"خرید اکانت، خدمات گیمینگ، آموزش و جدیدترین اخبار دنیای بازی.",
+    },
+
+    {
+        title:"دنیای گیمینگ Arshiya",
+        text:"هر چیزی که یک گیمر برای تجربه بهتر نیاز دارد.",
+    },
+
+    {
+        title:"وقتشه بازی رو جدی بگیری!",
+        text:"محصولات و خدمات گیمینگ را در Arshiya Game پیدا کن.",
+    }
+
+];
+
+let currentSlide = 0;
+
+const heroTitle = document.querySelector(".hero h1");
+const heroText = document.querySelector(".hero p");
+const dots = document.querySelectorAll(".hero-dots span");
+
+function changeSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= heroSlides.length){
+        currentSlide = 0;
+    }
+
+    heroTitle.innerHTML =
+        heroSlides[currentSlide].title;
+
+    heroText.innerText =
+        heroSlides[currentSlide].text;
+
+    dots.forEach((dot,index)=>{
+
+        dot.classList.toggle(
+            "active",
+            index === currentSlide
+        );
+
+    });
+
+}
+
+setInterval(changeSlide,5000);
+
+
+/* ================= HEADER SCROLL ================= */
+
+window.addEventListener("scroll",()=>{
+
+    const header =
+        document.querySelector("header");
+
+    if(window.scrollY > 30){
+
+        header.style.boxShadow =
+            "0 10px 35px rgba(0,0,0,.35)";
+
+    }else{
+
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+</script>
+
+</body>
 </html>
